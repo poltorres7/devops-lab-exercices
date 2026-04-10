@@ -20,5 +20,8 @@ spec:
         - name: app
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            - name: WINDOW_START
+              value: {{ .Values.app.windowStart | quote }}
           ports:
             - containerPort: 8080

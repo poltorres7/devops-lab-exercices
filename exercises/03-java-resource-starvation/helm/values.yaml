@@ -1,6 +1,6 @@
 image:
   repository: registry.digitalocean.com/devopslabregistry/java-resource-starvation
-  tag: latest
+  tag: c63f0ec-resource
   pullPolicy: IfNotPresent
 
 resources:

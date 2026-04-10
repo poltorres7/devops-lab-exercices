@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
     namespace: exercise-04
   source:
-    repoURL: REPLACE_WITH_GIT_REPO_URL
+    repoURL: git@github.com:poltorres7/devops-lab-exercices.git
     targetRevision: HEAD
     path: exercises/04-java-ci-failure/helm
     helm:

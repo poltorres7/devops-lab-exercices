@@ -27,7 +27,7 @@ Each exercise now includes:
 - `app/`: Java source and Dockerfile
 - `helm/`: runtime manifests and values
 
-The Argo CD application files intentionally use `REPLACE_WITH_GIT_REPO_URL` because this workspace does not currently have a Git remote configured. Before applying them, update `spec.source.repoURL` to the real repository URL that Argo CD can reach.
+The Argo CD application files are configured to point at the GitHub repository URL used for this lab. Ensure Argo CD has repository access before applying them.
 
 ## Build and Push
 

@@ -4,8 +4,8 @@ image:
   pullPolicy: IfNotPresent
 
 db:
-  host: mysql-wrong-host.internal.example
-  port: "25060"
+  host: db-router.svc.cluster.internal
+  port: "13306"
   name: lab
   user: lab_user
   password: change-me

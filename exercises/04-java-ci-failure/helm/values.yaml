@@ -1,6 +1,6 @@
 image:
   repository: registry.digitalocean.com/devopslabregistry/java-ci-failure
-  tag: latest
+  tag: c63f0ec-ci
   pullPolicy: IfNotPresent
 
 nodeSelector:

@@ -2,19 +2,19 @@
 
 ## Scenario
 
-A Java app should connect to MySQL, but the deployed configuration points it at the wrong host. The app and the database live on different network endpoints, and the candidate must confirm connectivity, DNS, ports, and the correct target.
+A Java service is expected to become healthy only after its database dependency is reachable. The current deployment never stabilizes, and the candidate must determine whether the issue is related to service discovery, endpoint selection, port reachability, or connection settings.
 
 ## Candidate Goals
 
-- inspect pod environment and logs
-- use `nc`, `dig`, `nslookup`, and `traceroute`
-- identify the wrong database hostname
+- inspect pod restart behavior and logs
+- use `nc`, `dig`, `nslookup`, and similar tooling
+- validate both hostname resolution and port reachability
 - update Helm values and redeploy
 
 ## Intended Fault
 
-The chart ships with `db.host` set to a non-routable placeholder instead of the real MySQL endpoint.
+The chart ships with database connection settings that do not match the real target endpoint, so the application fails during startup dependency validation.
 
 ## Remediation
 
-Update `helm/values.yaml` with the correct database host and redeploy.
+Update `helm/values.yaml` with the correct database connection settings and redeploy.

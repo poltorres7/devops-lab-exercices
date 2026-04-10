@@ -12,4 +12,4 @@ The application never reaches deployment because the CI pipeline fails during th
 
 ## Intended Fault
 
-The unit test is intentionally wrong and causes `mvn test` to fail.
+A build-time verification step fails because one of the test expectations no longer matches the current application behavior.

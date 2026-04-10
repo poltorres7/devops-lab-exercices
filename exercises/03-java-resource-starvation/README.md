@@ -2,7 +2,7 @@
 
 ## Scenario
 
-The application is stable in code, but the Helm chart is undersized and causes the pod to fail under constrained memory.
+The application code is functional, but the deployed workload does not remain stable under its current runtime resource profile.
 
 ## Candidate Goals
 
@@ -13,4 +13,4 @@ The application is stable in code, but the Helm chart is undersized and causes t
 
 ## Intended Fault
 
-The app allocates memory on startup while the chart sets an unrealistically low memory limit.
+The application performs significant allocation during startup while the chart defines memory settings that are too restrictive for the observed runtime behavior.

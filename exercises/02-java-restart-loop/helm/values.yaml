@@ -3,6 +3,9 @@ image:
   tag: f74057f
   pullPolicy: IfNotPresent
 
+app:
+  windowStart: "2026-13-01T08:00:00Z"
+
 nodeSelector:
   workload: lab
 
