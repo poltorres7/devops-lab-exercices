@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
     namespace: exercise-03
   source:
-    repoURL: git@github.com:poltorres7/devops-lab-exercices.git
+    repoURL: https://github.com/poltorres7/devops-lab-exercices.git
     targetRevision: HEAD
     path: exercises/03-java-resource-starvation/helm
     helm:
