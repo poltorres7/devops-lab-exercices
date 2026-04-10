@@ -142,8 +142,6 @@ spec:
               --context="${CONTEXT_DIR}" \
               --dockerfile="${CONTEXT_DIR}/Dockerfile" \
               ${DESTINATIONS} \
-              --cache=true \
-              --cache-copy-layers \
               --snapshot-mode=redo \
               --use-new-run
           '''
