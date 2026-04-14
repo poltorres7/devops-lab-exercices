@@ -1,6 +1,6 @@
 image:
   repository: registry.digitalocean.com/devopslabregistry/java-metrics-gap
-  tag: 6d36408
+  tag: bf79f34
   pullPolicy: IfNotPresent
 
 nodeSelector:

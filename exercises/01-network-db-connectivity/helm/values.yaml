@@ -1,6 +1,6 @@
 image:
   repository: registry.digitalocean.com/devopslabregistry/network-db-connectivity
-  tag: 677a0bb
+  tag: bf79f34
   pullPolicy: IfNotPresent
 
 db:

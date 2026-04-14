@@ -1,6 +1,6 @@
 image:
   repository: registry.digitalocean.com/devopslabregistry/java-restart-loop
-  tag: f74057f
+  tag: bf79f34
   pullPolicy: IfNotPresent
 
 app:
