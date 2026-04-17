@@ -1,6 +1,0 @@
-apiVersion: v2
-name: java-ci-failure
-description: Exercise 04 chart
-type: application
-version: 0.1.0
-appVersion: "0.0.1"
